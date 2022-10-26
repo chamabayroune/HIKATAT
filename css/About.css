@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    color: white;
+    font-family:roboto,sans-serif;
+    color: black;
+    }
+    html{
+        width: 100vw;
+        height: 100vh;
+    }
+    main{
+        margin-top: 30px;
+        width: 100vw;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center; 
+    }
+.img_contac{
+    width: 40vw;
+    height: 60vh;
+}
+.bbody{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vw;
+}
+.description{
+    margin-left: 10;
+    height: 60vh;
+    width: 30vw;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}

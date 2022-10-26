@@ -1,0 +1,40 @@
+*{
+box-sizing: border-box;
+margin: 0%;
+padding: 0%;
+color: white;
+font-family:roboto,sans-serif;
+}
+html{
+    width: 100vw;
+    height: 100vh;
+}
+body{
+    background-image: url("../assets/back_home.jpg");
+    background-position: center;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+}
+main{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    
+}
+
+.title{
+    font-size: 100px;
+}
+.button_check{
+    background-color: rgb(217, 217, 217);
+    padding: 4px 25px;
+    color: black;
+    text-decoration: none;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+}
