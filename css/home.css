@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+body{
+  font-family: 'Times New Roman', Times, serif;   
+  
+}
+.conu{
+  background-image: url("../asset/home/homo.jpg") !important;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+h2{
+  color: rgb(169, 0, 0);
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.mod{
+    text-decoration: none;
+    color: #000;
+   font-size: 20px;
+  }
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    color:rgb(169, 0, 0);
+    padding: 25px 60px;
+}
+.cart{
+   color: black;
+   font-size: 20px;
+   padding: 5px;
+   border-radius: 4;
+}
+.menunav{
+  display: flex;
+  gap: 1rem;
+}
+.t{
+  text-align: right;
+  margin-right: 100px;
+}
+.para{
+   display: bloc;
+  margin-top: 50px;
+}
+
+.bnt{
+  display: inline-block;
+  padding: 10px;
+  background-color: #fffaeb;
+  border-radius: 5px;
+  margin: 10px;
+  margin-top: 70px;
+  box-shadow: #E5D9B6 0px 3px 6px;
+  color:#E5D9B6;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.footer{
+  text-align:center;
+}
+
+
+@media screen and (max-width: 414px) {
+  .cart{
+    position: fixed;
+  }
+  .navbar{
+    position: absolute;
+  }
+  .navbar h2{
+    position: fixed;
+
+  }
+}
+
+
+
+

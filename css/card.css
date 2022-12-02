@@ -1,0 +1,37 @@
+.cart-box{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 360px;
+    height: 100vh;
+    overflow-y:auto;
+    overflow-x: hidden;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid var(--main-color);
+    transition: 1.5s;
+  
+  }
+  .cart-box.active{
+    right: 0;
+    transition: 0.5s;
+  }
+  .cart-title{
+    text-align: center;
+   font-size: 1.5rem;
+   font-weight: 600;
+   margin-top: 2rem;
+  
+  }
+  
+  .{
+    display: grid;
+    grid-template-columns: ;
+  }
+  
+  
+  .
+  div.t{
+    padding: 40px 80px;
+    text-align:right;
+  }

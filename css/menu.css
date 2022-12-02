@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+body{
+  font-family: 'Times New Roman', Times, serif;   
+  
+}
+.conu{
+  background-image: url("../asset/home/homo.jpg") !important;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    color:rgb(169, 0, 0);
+    padding: 25px 60px;
+}
+h2{
+  color: rgb(169, 0, 0);
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.cart{
+   color: black;
+   font-size: 20px;
+   padding: 5px;
+   border-radius: 4;
+}
+
+.menunav{
+  display: flex;
+  gap: 1rem;
+}
+
+.mod{
+  text-decoration: none;
+  color: #000;
+ font-size: 20px;
+}
+
+.bnt{
+  display: inline-block;
+  padding: 10px;
+  background-color: #fffaeb;
+  border-radius: 5px;
+  margin: 10px;
+  
+  box-shadow: #E5D9B6 0px 3px 6px;
+  color:#E5D9B6;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.catego{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.shop{
+width: 100%;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+gap: 20px;
+justify-content: center;
+align-items: center;
+margin-top: 70px;
+}
+.dtails , .price{
+  display: block;
+  text-align: center;
+}
+
+.footer{
+    text-align:center;
+  }
