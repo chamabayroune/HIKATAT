@@ -1,57 +1,68 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box ;
+body {
+  font-family: 'Times New Roman', Times, serif;
+
 }
-body{
-  font-family: 'Times New Roman', Times, serif;   
-  
-}
-.conu{
+
+.conu {
   background-image: url("../asset/home/homo.jpg") !important;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
 }
-h2{
+
+#hitaka {
+  color: rgb(169, 0, 0);
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+#welcome {
   color: rgb(169, 0, 0);
   font-size: 30px;
   font-family: 'Times New Roman', Times, serif;
 }
 
-.mod{
-    text-decoration: none;
-    color: #000;
-   font-size: 20px;
-  }
+.mod {
+  text-decoration: none;
+  color: rgb(169, 0, 0);
+  font-size: 20px;
+}
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    color:rgb(169, 0, 0);
-    padding: 25px 60px;
-}
-.cart{
-   color: black;
-   font-size: 20px;
-   padding: 5px;
-   border-radius: 4;
-}
-.menunav{
+.navbar {
   display: flex;
-  gap: 1rem;
+  justify-content: space-between;
+  color: rgb(169, 0, 0);
+  padding: 25px 60px;
 }
-.t{
+
+.cart {
+  color: rgb(169, 0, 0);
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 4;
+}
+
+.menunav {
+  display: flex;
+  gap: 5rem;
+}
+
+
+.t {
   text-align: right;
   margin-right: 100px;
+  margin-top: 5%;
 }
-.para{
-   display: bloc;
+
+.para {
+  display: bloc;
   margin-top: 50px;
 }
 
-.bnt{
+.bnt {
   display: inline-block;
   padding: 10px;
   background-color: #fffaeb;
@@ -59,29 +70,61 @@ h2{
   margin: 10px;
   margin-top: 70px;
   box-shadow: #E5D9B6 0px 3px 6px;
-  color:#E5D9B6;
+  color: #E5D9B6;
   cursor: pointer;
   text-decoration: none;
 }
 
-.footer{
-  text-align:center;
+.footer {
+  text-align: center;
 }
 
+@media (max-width:700px) {
 
-@media screen and (max-width: 414px) {
-  .cart{
+  #hitaka {
     position: fixed;
+    text-align: center;
+    margin-left: 90px;
   }
-  .navbar{
-    position: absolute;
-  }
-  .navbar h2{
-    position: fixed;
 
+  .cart {
+    position: fixed;
+    top: 1;
+    right: 0.5cm;
   }
+
+  .menunav {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 30vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: wheat;
+    flex: basis 40px;
+    ;
+  }
+
+  .menunav.opned {
+    left: 250px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(224 224 224);
+  }
+
+  .t {
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 20%;
+  }
+
+  .footer {
+    margin-top: 13%;
+  }
+
 }
-
-
-
-

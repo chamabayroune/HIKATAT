@@ -1,13 +1,12 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing:border-box ;
+body {
+  font-family: 'Times New Roman', Times, serif;
 }
-body{
-  font-family: 'Times New Roman', Times, serif;   
-  
+
+.cartZ {
+  display: none;
 }
-.conu{
+
+.conu {
   background-image: url("../asset/home/homo.jpg") !important;
   background-position: center;
   background-size: cover;
@@ -15,70 +14,215 @@ body{
   min-height: 100vh;
 }
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    color:rgb(169, 0, 0);
-    padding: 25px 60px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(169, 0, 0);
+  padding: 25px 60px;
 }
-h2{
+
+#hitaka {
   color: rgb(169, 0, 0);
   font-size: 30px;
   font-family: 'Times New Roman', Times, serif;
+  margin-left: 0;
+  margin-top: 0;
+  cursor: pointer;
 }
 
-.cart{
-   color: black;
-   font-size: 20px;
-   padding: 5px;
-   border-radius: 4;
-}
-
-.menunav{
+.menunav {
   display: flex;
-  gap: 1rem;
+  flex-direction: row;
+  gap: 10rem;
+
+}
+.cart1{
+  color: rgb(169, 0, 0);
+  border: none;
+  background: none;
 }
 
-.mod{
+.titlo {
+  color: rgb(169, 0, 0);
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  margin: auto;
+  text-align: center;
+  margin-left: 1px;
+}
+
+.mod {
   text-decoration: none;
-  color: #000;
- font-size: 20px;
+  color: rgb(169, 0, 0);
+  font-size: 20px;
 }
 
-.bnt{
+
+.bnt {
   display: inline-block;
   padding: 10px;
   background-color: #fffaeb;
   border-radius: 5px;
   margin: 10px;
-  
   box-shadow: #E5D9B6 0px 3px 6px;
-  color:#E5D9B6;
+  color: #E5D9B6;
   cursor: pointer;
   text-decoration: none;
 }
 
-.catego{
-  display: grid;
+.catego {
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.shop{
-width: 100%;
-margin: auto;
-display: grid;
-grid-template-columns: repeat(4,1fr);
-gap: 20px;
-justify-content: center;
-align-items: center;
-margin-top: 70px;
+.shop {
+  width: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
 }
-.dtails , .price{
+
+.dtails,
+.price {
   display: block;
   text-align: center;
 }
 
-.footer{
-    text-align:center;
+.footer {
+  margin-top: 6%;
+  text-align: center;
+}
+
+@media (max-width:700px) {
+
+.fa{
+  margin-left: 10em;
+}
+header{
+  width: 100%;
+  height: 70%;
+
+}
+
+  #hitaka {
+    position: fixed;
+    text-align: center;
+    margin-left: 100px;
   }
+
+  .menunav {
+    display: flex;
+    /* gap: 5rem; */
+    flex-direction: column;
+    margin-top: 36%;
+    margin-left: auto;
+    /* font-size: 40px; */
+
+  }
+
+  .mod {
+    text-decoration: none;
+    color: rgb(169, 0, 0);
+    font-size: 46px;
+  }
+
+  .menunav.opned {
+    left: 250px;
+  }
+
+  .navbar {
+    display: flex;
+   flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .titlo {
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 3em;
+  }
+
+  .shop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -2px;
+    
+  }
+
+
+  .catego {
+    margin-top: 100px;
+  }
+
+  .emo {
+    max-width: 25em;
+    min-height: 25em;
+  }
+
+  #imo {
+    max-width: 30em;
+    min-height: 31em;
+  }
+
+  #migo {
+    max-width: 34em;
+    min-height: 34em;
+  }
+
+  .dtails {
+    margin-block-start: 2em;
+  }
+
+  .footer {
+    margin-top: 13%;
+    margin-left: 57%;
+
+  }
+
+  #myOverlay {
+    display: none;
+    position: absolute;
+    top: 12%;
+    right: 0;
+
+  }
+
+  main {
+    width: 157%;
+  }
+
+  #menunav {
+    margin-top: 7em;
+    display: none;
+    flex-direction: column;
+    gap: 5rem;
+    margin-left: 51%;
+  }
+
+  /* .cartZ {
+
+    position: absolute;
+    display: block;
+    background: none;
+    border: none;
+    color: rgb(186, 231, 24);
+    font-size: 59px;
+    cursor: pointer;
+    /* margin-left: 150px; */
+  } */
+
+  .button {
+    border: none;
+  }
+  /* .navsize{
+    width: 100px;
+    display: flex !important;
+    justify-content: space-between;
+  } */
+}

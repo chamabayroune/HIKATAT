@@ -19,7 +19,7 @@ min-height: 100vh;
 
 .mod{
   text-decoration: none;
-  color: #000;
+  color: rgb(169, 0, 0);
  font-size: 20px;
 }
 
@@ -35,7 +35,7 @@ h2{
   font-family: 'Times New Roman', Times, serif;
 }
 .cart{
- color: black;
+  color: rgb(169, 0, 0);
  font-size: 20px;
  padding: 5px;
  border-radius: 4;
@@ -44,8 +44,18 @@ h2{
 .menunav{
 
 display: flex;
-gap: 1rem;
+gap: 4rem;
 }
+
+#tio{
+  color: rgb(169, 0, 0);
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  margin: auto;
+  text-align: center;
+  margin-left: 1px;
+  margin-top: 2em;
+  }
 
 .bnt{
 padding: 10px;
@@ -57,25 +67,111 @@ color:#E5D9B6;
 cursor: pointer;
 text-decoration: none;
 }
-.form , .mapouter {
-  display: bloc;
-  margin-top: 50px;
-  text-align: center;
-}
 
-label ,input{
-  padding: 10px 20px;
-  margin-top: 30px;
- border-radius: 10px;
+.form ,.mapouter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 20px;
+  text-align: center;
+  width: 45%;
 }
- 
-.mapouter{
-  width: 100vw;
+.submit{
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 40px;
+  margin-top: 20px;
+  cursor: pointer;
+  width: 100%;
 }
+.input_section{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.input_section input{
+  padding: 10px 20px;
+ border: 1px solid black;
+ border-radius: 10px;
+}
+.input_section label{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  margin-left: 10px;
+}
+
 
 .footer{
 text-align:center;
+}
+
+@media (max-width:700px) {
+
+  #hitaka {
+    position: fixed;
+    text-align: center;
+    margin-left: 90px;
+  }
+
+  .cart {
+    position: fixed;
+    top: 1;
+    right: 0.5cm;
+  }
+
+  .menunav {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 30vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: wheat;
+    flex: basis 40px;
+    background-color: aliceblue;
+  }
+
+  .menunav.opned {
+    left: 250px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(224 224 224);
+  }
+
+  .tio{
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 3em;
+    margin-bottom: -3em; 
+  }
+
+.form{
+  margin-bottom: 8em;
+  margin-top: 6em;
+}
+  .footer {
+    margin-top: 13%;
+  }
+}
+
+
+
+
+
+
+
+
+.contact_body{
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  
 }

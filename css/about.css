@@ -1,10 +1,3 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing:border-box ;
-  font-size: large;
-}
-
 body{
 font-family: 'Times New Roman', Times, serif;   
 }
@@ -17,10 +10,9 @@ background-repeat: no-repeat;
 min-height: 100vh;
 }
 
-
 .mod{
   text-decoration: none;
-  color: #000;
+  color: rgb(169, 0, 0);
  font-size: 20px;
 }
 
@@ -30,26 +22,42 @@ min-height: 100vh;
   color:rgb(169, 0, 0);
   padding: 25px 60px;
 }
-h2{
+#hitaka{
   color: rgb(169, 0, 0);
   font-size: 30px;
   font-family: 'Times New Roman', Times, serif;
+  margin-left: 0;
+  margin-top: 0;
+  cursor: pointer;
 }
 .cart{
- color: black;
+ color: rgb(169, 0, 0);
  font-size: 20px;
  padding: 5px;
  border-radius: 4;
 }
 .menunav{
 display: flex;
-gap: 1rem;
+gap: 5rem;
 }
+.tilo{
+  color: rgb(169, 0, 0);
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  margin: auto;
+  text-align: center;
+  margin-left: 1px;
+  }
 
 div.tx{
 padding: 40px 80px;
 text-align:left;
 margin-top: 100px;
+}
+h3{
+  color: rgb(169, 0, 0);
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .abouto{
@@ -81,6 +89,103 @@ cursor: pointer;
 text-decoration: none;
 }
 
+#chee{
+  width: 40%;
+}
+.chefo{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  margin-top: -2em;
+  margin-bottom: 15px;
+  
+}
+.body_chef{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row-reverse;
+
+
+}
+#titl{
+ color: rgb(169, 0, 0);
+
+}
+
+.PARA{
+  margin-bottom: 2em;
+}
 .footer{
 text-align:center;
+}
+
+@media (max-width:700px) {
+
+  #hitaka {
+    position: fixed;
+    text-align: center;
+    margin-left: 90px;
+    cursor: pointer;
+  }
+
+  .cart {
+    position: fixed;
+    top: 1;
+    right: 0.5cm;
+    cursor: pointer;
+  }
+
+  .menunav {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 30vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: wheat;
+    flex: basis 40px;
+    cursor: pointer;
+  }
+
+  .menunav.opned {
+    left: 250px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(224 224 224);
+  }
+  .tilo{
+    text-align: center;
+    margin-left: 10px;
+    margin-top: 3em;
+    margin-bottom: -3em; 
+  }
+
+  .tx {
+    text-align: center;
+    margin-right: 10px;
+  }
+  .abouto{
+    display: flex;
+    flex-direction: column;
+  }
+  .chefo{
+    display: flex;
+    flex-direction: column;
+  }
+  #chee{
+    width: 110%;
+  }
+
+  .footer {
+    margin-top: 13%;
+  }
 }

@@ -1,173 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/menu.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>hikata sushiso</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/menu.css" />
+  <link rel="stylesheet" href="./css/card.css" />
+ 
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>hikata sushiso</title>
+
 </head>
-<body class="conu" >
 
-    <header>  
-        <div class="navbar">
-            <h2 >Hikata sushiso</h2>
-    <div class="menunav">
-        <a href="index.html" class="mod">home</a>
-        <a href="menu.html" class="mod active">menu</a>
-         <a href="about.html" class="mod">about</a>
-         <a href="contact.html" class="mod">contact</a>
+<body class="conu">
+  <header>
+    <div class="cartZ" onclick="document.getElementById('menunav').style.display = 'flex'">
+      <button  
+            >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M3 4h18v2H3V4zm0 7h18v2H3v-2zm0 7h18v2H3v-2z"/></svg>
+      </button>
+
     </div>
-        <div class="cart">
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            
-             
-        </div>
-       </div>
+    <div class="navbar" >
+      <h2 id="hitaka">Hikata sushiso</h2>
+      <div id="menunav">
+        <a href="index.html" class="mod" style="margin: 35px;">home</a>
+        <a href="menu.html" class="mod active"style="margin: 35px;">menu</a>
+        <a href="about.html" class="mod"style="margin: 35px;">about</a>
+        <a href="contact.html" class="mod"style="margin: 35px;">contact</a>
+      </div>
 
-    </header>
-   
-    <main>
+      <div class="cart1">
+        <button style="
+              background: none;
+              border: none;
+              color: rgb(169, 0, 0);
+              font-size: 1.5rem;
+              /* margin-right: -50%; */
+              top: 0;
+              right: 0;
+            " ; onclick="document.getElementById('myOverlay').style.display = 'block'">
+          <i class="fa fa-shopping-cart" aria-hidden="true" style="margin-right:-200%;" ></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <H3 class="titlo">menu</H3>
+
+    <div style="display: flex; justify-content: space-around;">
+      <!-- fuction -->
+      <div class="buto" onclick="sushi()">
+        <a style="    width: 10em;    text-align: center;       color: black; " class="bnt">SUSHI</a>
+      </div>
+      <div class="buto" onclick="tkoso()">
+        <a style="    width: 10em;   text-align: center;       color: black;     " class="bnt">TKOSO</a>
+      </div>
+      <div class="buto" onclick="ramen()">
+        <a style="    width: 10em;   text-align: center;       color: black;     " class="bnt">RAMEN</a>
+      </div>
+    </div>
+    <div style="display: flex;flex-direction: row;">
       <div class="shop" id="shop">
-        
-        <div class="catego">
-            <img width="150" height="150" src="../asset/menu/M1.jpg" alt="">
-            <div class="dtails">
-                <H3>tkoso</H3>
-                <div class="price">
-                    <P>$150.00</P>
-                
-                    <div class="buto">
-                        <a href="#" class="bnt">Add</a>
-                    </div>
-                </div>
+        <div class="catego" id="tkoso">
+          <img width="150" height="150" src="./asset/menu/M1.jpg" alt="" class="emo" />
+          <div class="dtails">
+            <h3>tkoso</h3>
+            <div class="price">
+              <p>$150.00</p>
 
+              <div class="buto">
+                <a onclick="addPlat(150.00,'tkoso')" href="#myOverlay" class="bnt">Add</a>
+              </div>
             </div>
-        </div>
-        
-
-        <div class="catego">
-            <img width="150" height="150" src="../asset/menu/test.jpg" alt="">
-            <div class="dtails">
-                <H3>tkoso</H3>
-                <div class="price">
-                    <P>$150.00</P>
-                
-                    <div class="buto">
-                        <a href="#" class="bnt">Add</a>
-                    </div>
-                </div>
-
-            </div>
+          </div>
         </div>
 
-        <div class="catego">
-            <img width="150" height="150" src="../asset/menu/M3.jpg" alt="">
-            <div class="dtails">
-                <H3>hikata</H3>
-                <div class="price">
-                    <P>$100.00</P>
-                
-                    <div class="buto">
-                        <a href="#" class="bnt">Add</a>
-                    </div>
-                </div>
+        <div class="catego" id="tkoso">
+          <img width="150" height="150" src="./asset/menu/test.jpg" alt="" class="emo" />
+          <div class="dtails">
+            <h3>tkoso</h3>
+            <div class="price">
+              <p>$150.00</p>
 
+              <div class="buto">
+                <a onclick="addPlat(150.00,'tkoso')" href="#myOverlay" class="bnt">Add</a>
+              </div>
             </div>
+          </div>
         </div>
 
-        <div class="catego">
-            <img width="150" height="150" src="../asset/menu/M4.jpg" alt="">
-            <div class="dtails">
-                <H3>Sushiso</H3>
-                <div class="price">
-                    <P>$130.00</P>
-                
-                    <div class="buto">
-                        <a href="#" class="bnt">Add</a>
-                    </div>
-                </div>
+        <div class="catego" id="sushi">
+          <img width="150" height="150" src="./asset/menu/M3.jpg" alt="" class="emo" id="imo" />
+          <div class="dtails">
+            <h3>hikata</h3>
+            <div class="price">
+              <p>$100.00</p>
 
+              <div class="buto">
+                <a onclick="addPlat(100.00,'hitaka')" href="#myOverlay" class="bnt">Add</a>
+              </div>
             </div>
+          </div>
         </div>
 
-        <div class="catego">
-            <img width="150" height="150" src="../asset/menu/M5.jpg" alt="">
-            <div class="dtails">
-                <H3>Sushiso</H3>
-                <div class="price">
-                    <P>$130.00</P>
-                
-                    <div class="buto">
-                        <a href="#" class="bnt">Add</a>
-                    </div>
-                </div>
+        <div class="catego" id="sushi">
+          <img width="150" height="150" src="./asset/menu/M4.jpg" alt="" class="emo" />
+          <div class="dtails">
+            <h3>Sushiso</h3>
+            <div class="price">
+              <p>$130.00</p>
 
+              <div class="buto">
+                <a onclick="addPlat(130.00,'sushiso')" href="#myOverlay" class="bnt">Add</a>
+              </div>
             </div>
-        </div>
-        
-        <div class="catego">
-            <img width="150" height="150" src="../asset/menu/M6.jpg" alt="">
-            <div class="dtails">
-                <H3>Sushiso</H3>
-                <div class="price">
-                    <P>$130.00</P>
-                
-                    <div class="buto">
-                        <a href="#" class="bnt">Add</a>
-                    </div>
-                </div>
-
-            </div>
+          </div>
         </div>
 
-         <div class="catego">
-            <img width="150" height="150" src="../asset/menu/M2.jpg" alt="">
-            <div class="dtails">
-                <H3>Sushiso</H3>
-                <div class="price">
-                    <P>$130.00</P>
-                
-                    <div class="buto">
-                        <a href="#" class="bnt">Add</a>
-                    </div>
-                </div>
+        <div class="catego" id="sushi">
+          <img width="150" height="150" src="./asset/menu/M5.jpg" alt="" class="emo" id="imo" />
+          <div class="dtails">
+            <h3>Sushiso</h3>
+            <div class="price">
+              <p>$130.00</p>
 
+              <div class="buto">
+                <a onclick="addPlat(130.00,'sushiso')" href="#myOverlay" class="bnt">Add</a>
+              </div>
             </div>
+          </div>
         </div>
 
-        <div class="catego">
-            <img width="150" height="150" src="../asset/menu/last.jpg" alt="">
-            <div class="dtails">
-                <H3>Sushiso</H3>
-                <div class="price">
-                    <P>$130.00</P>
-                
-                    <div class="buto">
-                        <a href="#" class="bnt">Add</a>
-                    </div>
-                </div>
-
+        <div class="catego" id="sushi">
+          <img width="150" height="150" src="./asset/menu/M6.jpg" alt="" class="emo" id="migo" />
+          <div class="dtails">
+            <h3>Sushiso</h3>
+            <div class="price">
+              <p>$130.00</p>
+              <div class="buto">
+                <a onclick="addPlat(130.00,'sushiso')" href="#myOverlay" class="bnt">Add</a>
+              </div>
             </div>
+          </div>
+        </div>
+
+        <div class="catego" id="sushi">
+          <img width="150" height="150" src="./asset/menu/M2.jpg" alt="" class="emo" id="imo" />
+          <div class="dtails">
+            <h3>Sushiso</h3>
+            <div class="price">
+              <p>$130.00</p>
+
+              <div class="buto">
+                <a onclick="addPlat(130.00,'tkoso')" href="#myOverlay" class="bnt">Add</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="catego" id="sushi">
+          <img width="150" height="150" src="./asset/menu/last.jpg" alt="" class="emo" />
+          <div class="dtails">
+            <h3>Sushiso</h3>
+            <div class="price">
+              <p>$130.00</p>
+
+              <div class="buto">
+                <a onclick="addPlat(130.00,'tkoso')" href="#myOverlay" class="bnt">Add</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" id="myOverlay">
+        <div class="heading1">
+          <h1 id="h1"><span class="shopper">s</span> Shopping Cart</h1>
+
+          <button style="background: none; " onclick="document.getElementById('myOverlay').style.display = 'none'"
+            class="visibility-cart transition is-open">
+            X
+          </button>
+        </div>
+
+        <div class="cart transition is-open">
+          <div class="heading1" id="part1">
+            <h3>PRODUIT</h3>
+            <h3>PRICE</h3>
+          </div>
+          <div class="prodct">
+          </div>
+
+          <div class="heading1" id="part3">
+            <h3  type="submit" onclick="total()" id="h1" style="cursor: pointer;">TOTAL</h3>
+            <h3 id="h1" class="pricee">0$</h3>
+          </div>
         </div>
 
       </div>
-    </main>
-    <footer>
-        <div class="footer">
-        <!-- Add font awesome icons -->
-        <i class="fa fa-facebook" aria-hidden="true"></i>
-        <i class="fa fa-whatsapp" aria-hidden="true"></i>
-        <i class="fa fa-instagram" aria-hidden="true"></i>
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-
-        <p>copycopy created by chaicha:)</p>
     </div>
-    </footer>
-<script src="../main.js" type="module"></script>
+  </main>
+  <footer>
+    <div class="footer">
+      <!-- Add font awesome icons -->
+      <i class="fa fa-facebook" aria-hidden="true"></i>
+      <i class="fa fa-whatsapp" aria-hidden="true"></i>
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+
+      <p>copycopy created by chaicha:)</p>
+    </div>
+  </footer>
+  <script>
+    var Total = 0;
+    // PARAMETERS
+    var price = document.getElementsByClassName("pricee")[0];
+    function addPlat(prix, name) {
+      var product = document.getElementsByClassName("prodct")[0];
+      product.innerHTML +=
+      // afficher
+      ` 
+        <div id="part4" class="heads">
+              <span class="prod">
+                <h3 >${name}</h3>
+                <h3>${prix}$</h3>
+              </span>
+            </div>`;
+      Total += prix;
+      price.innerHTML = Total + "$";
+    }
+    </script>
+  <script>
+    function sushi() {
+      document.getElementById("tkoso").style.display = "none";
+      document.getElementById("ramen").style.display = "none";
+    }
+    function tkoso() {
+      document.getElementById("sushi").style.display = "none";
+      document.getElementById("ramen").style.display = "none";
+    }
+    function ramen() {
+      document.getElementById("sushi").style.display = "none";
+      document.getElementById("tkoso").style.display = "none";
+    }
+    function total(){
+      alert("vous avez effectuez la commande ");
+      location.reload();
+      
+    }
+  </script>
+
 </body>
-
-
 
 </html>

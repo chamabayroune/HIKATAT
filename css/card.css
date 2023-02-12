@@ -1,9 +1,40 @@
+
+body{
+font-family: 'Times New Roman', Times, serif;   
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(169, 0, 0);
+    padding: 25px 60px;
+}
+
+h2{
+color: rgb(169, 0, 0);
+font-size: 30px;
+font-family: 'Times New Roman', Times, serif;
+}
+
+.cart{
+ color: black;
+ font-size: 20px;
+ padding: 5px;
+ border-radius: 4;
+}
+
+
+
+.mod{
+  text-decoration: none;
+  color: rgb(169, 0, 0);
+}
+
 .cart-box{
     position: fixed;
     top: 0;
     right: 0;
-    width: 360px;
-    height: 100vh;
     overflow-y:auto;
     overflow-x: hidden;
     padding: 20px;
@@ -23,15 +54,157 @@
    margin-top: 2rem;
   
   }
-  
-  .{
-    display: grid;
-    grid-template-columns: ;
+ 
+   .card-img{
+    width: 100px;
+   }
+
+   @font-face {
+    font-family: "Shopper";
+    src: url("http://www.shopperfont.com/font/Shopper-Std.ttf");
+  }
+
+  .shopper {
+    text-transform: lowercase;
+    font: 2em "Shopper", sans-serif;
+    line-height: 0.5em;
+    display: inline-block;
+  }
+  .prodct{
+    max-height: 200px;
+    overflow-y: auto;
+  }
+
+  input {
+    border: 0.3em solid #bbc3c6;
+    padding: 0.5em 0.3em;
+    font-size: 1.4em;
+    color: #8a8a8a;
+    text-align: center;
+  }
+
+  img {
+    max-width: 9em;
+    width: 100%;
+    overflow: hidden;
+    margin-right: 1em;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .container1 {
+    max-width: 75em;
+    width: 95%;
+    margin: 40px auto;
+    overflow: hidden;
+    position: relative;
+
+    border-radius: 0.6em;
+    background: #000000;
+    box-shadow: 0 0.5em 0 rgba(138, 148, 152, 0.2);
+  }
+
+  .heading1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    position: relative;
+    z-index: 1;
+    color: #fffaeb;
+    background:#E5D9B6;
+  }
+
+  .cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+  .cart.is-closed {
+    height: 0;
+    margin-top: -2.5em;
+  }
+
+  .tf {
+    background: #d3ad7f;
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 1.2em;
+  }
+
+  .col {
+    padding: 1em;
+    width: 12%;
+  }
+
+  .col-pro {
+    width: 80%;
+  }
+
+  .row > div {
+    vertical-align: middle;
+  }
+  .visibility-cart {
+    height: 1.5em;
+    color: #fff;
+    background: black;
+    font: bold 2em arial;
+    border: 0.16em solid #fff;
+    border-radius: 2.5em;
+    padding: 0 0.22em 0 0.25em;
+  }
+  #myOverlay {
+    display: none;
+    position: absolute;
+    top: 12%;
+    right: 0;
+  }
+  #part1 {
+    display: flex;
+    justify-content: space-around;
+  }
+  #part3 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+  }
+  .heads {
+    padding: 1em;
+    position: relative;
+    z-index: 1;
+    background: #ffffff;
+    margin-top: 5%;
+
+  }
+  #part4 {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #prod {
+    display: flex;
+    justify-content: space-around;
+  }
+  .prod{
+    display: flex;
+    justify-content: space-around;
+    max-height: 400px;
   }
   
-  
-  .
-  div.t{
-    padding: 40px 80px;
-    text-align:right;
+  @media screen and (max-width: 755px) {
+    .container {
+      width: 98%;
+    }
+
+    .col-pro {
+      width: 35%;
+    }
+
+    .col-qty {
+      width: 22%;
+    }
   }
