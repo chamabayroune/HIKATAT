@@ -76,7 +76,7 @@
               <p>$150.00</p>
 
               <div class="buto">
-                <a onclick="addPlat(150.00,'tkoso')" href="#myOverlay" class="bnt">Add</a>
+                <a onclick="addPlat(150.00,'tkoso',1)" href="#myOverlay" class="bnt">Add</a>
               </div>
             </div>
           </div>
@@ -90,7 +90,7 @@
               <p>$150.00</p>
 
               <div class="buto">
-                <a onclick="addPlat(150.00,'tkoso')" href="#myOverlay" class="bnt">Add</a>
+                <a onclick="addPlat(150.00,'tkoso',2)" href="#myOverlay" class="bnt">Add</a>
               </div>
             </div>
           </div>
@@ -104,7 +104,7 @@
               <p>$100.00</p>
 
               <div class="buto">
-                <a onclick="addPlat(100.00,'hitaka')" href="#myOverlay" class="bnt">Add</a>
+                <a onclick="addPlat(100.00,'hitaka',3)" href="#myOverlay" class="bnt">Add</a>
               </div>
             </div>
           </div>
@@ -118,7 +118,7 @@
               <p>$130.00</p>
 
               <div class="buto">
-                <a onclick="addPlat(130.00,'sushiso')" href="#myOverlay" class="bnt">Add</a>
+                <a onclick="addPlat(130.00,'sushiso',4)" href="#myOverlay" class="bnt">Add</a>
               </div>
             </div>
           </div>
@@ -132,7 +132,7 @@
               <p>$130.00</p>
 
               <div class="buto">
-                <a onclick="addPlat(130.00,'sushiso')" href="#myOverlay" class="bnt">Add</a>
+                <a onclick="addPlat(130.00,'sushiso',5)" href="#myOverlay" class="bnt">Add</a>
               </div>
             </div>
           </div>
@@ -145,7 +145,7 @@
             <div class="price">
               <p>$130.00</p>
               <div class="buto">
-                <a onclick="addPlat(130.00,'sushiso')" href="#myOverlay" class="bnt">Add</a>
+                <a onclick="addPlat(130.00,'sushiso',6)" href="#myOverlay" class="bnt">Add</a>
               </div>
             </div>
           </div>
@@ -159,7 +159,7 @@
               <p>$130.00</p>
 
               <div class="buto">
-                <a onclick="addPlat(130.00,'tkoso')" href="#myOverlay" class="bnt">Add</a>
+                <a onclick="addPlat(130.00,'tkoso',7)" href="#myOverlay" class="bnt">Add</a>
               </div>
             </div>
           </div>
@@ -173,7 +173,7 @@
               <p>$130.00</p>
 
               <div class="buto">
-                <a onclick="addPlat(130.00,'tkoso')" href="#myOverlay" class="bnt">Add</a>
+                <a onclick="addPlat(130.00,'tkoso',8)" href="#myOverlay" class="bnt">Add</a>
               </div>
             </div>
           </div>
@@ -215,27 +215,47 @@
       <i class="fa fa-instagram" aria-hidden="true"></i>
       <i class="fa fa-twitter" aria-hidden="true"></i>
 
-      <p>copycopy created by chaicha:)</p>
+      <p>copycopy created by chaicha:</p>
     </div>
   </footer>
+
+
   <script>
     var Total = 0;
-    // PARAMETERS
-    var price = document.getElementsByClassName("pricee")[0];
-    function addPlat(prix, name) {
-      var product = document.getElementsByClassName("prodct")[0];
-      product.innerHTML +=
-      // afficher
-      ` 
-        <div id="part4" class="heads">
-              <span class="prod">
-                <h3 >${name}</h3>
-                <h3>${prix}$</h3>
-              </span>
-            </div>`;
-      Total += prix;
-      price.innerHTML = Total + "$";
-    }
+
+function addPlat(prix, name, id) {
+  var product = document.getElementsByClassName("prodct")[0];
+  var price = document.getElementsByClassName("pricee")[0];
+
+  // Vérifier si l'élément existe déjà
+  var existingProduct = document.querySelector(`#part4[data-id="${id}"]`);
+
+  if (existingProduct) {
+    // Si l'élément existe déjà, ajouter le prix au total et mettre à jour le prix du produit
+    
+    var existingProductPrice = existingProduct.querySelector(".prod h3:last-child");
+    var existingProductPriceValue = parseFloat(existingProductPrice.innerText);
+
+    existingProductPrice.innerText = existingProductPriceValue + prix + "$";
+    Total += prix;
+  } else {
+    // Si l'élément n'existe pas, ajouter le produit et son prix au total
+    product.innerHTML +=
+    // afficher
+    ` 
+      <div id="part4" class="heads" data-id="${id}">
+            <span class="prod">
+              <h3 >${name}</h3>
+              <h3>${prix}$</h3>
+            </span>
+          </div>`;
+
+    Total += prix;
+  }
+
+  price.innerHTML = Total + "$";
+}
+
     </script>
   <script>
     function sushi() {
@@ -251,7 +271,7 @@
       document.getElementById("tkoso").style.display = "none";
     }
     function total(){
-      alert("vous avez effectuez la commande ");
+      alert("vous avez effectuez la commande " + Total + "$");
       location.reload();
       
     }

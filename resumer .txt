@@ -1,0 +1,38 @@
+JavaScript is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else.
+
+* In HTML, JavaScript programs are executed by the web browser.
+
+BASIC OF JAVASCRIPT :
+* The function is invoked (called) when a button is clicked .
+* Déclare var : with let [Literals] (Declares a block variable).
+                with var (Declares a variable).
+                with const (Declares a block constant).
+                just put the name and give it a valu .
+
+* DATA TYPE :
+ // Numbers:
+let length = 16;
+let weight = 7.5;
+
+// Strings:
+let color = "Yellow";
+let lastName = "Johnson";
+
+// Booleans
+let x = true;
+let y = false;
+
+// Object:
+const person = {firstName:"John", lastName:"Doe"};
+
+// Array object:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// Date object:
+const date = new Date("2022-03-25");
+
+* FUNCTION :
+// Function to compute the product of p1 and p2
+function myFunction(p1, p2) {
+  return p1 * p2;
+}
